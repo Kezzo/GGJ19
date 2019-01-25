@@ -26,7 +26,10 @@ public class Hitting : MonoBehaviour
 		if( opponent.CurrentPose == Pose.BLOCK )
 			return;
 
-		opponent.TakeDamage( Damage );
+		var win = opponent.TakeDamage( Damage );
+
+		if( win )
+			Debug.Log( "YOU WIN" );
 	}
 
     void OnTriggerEnter2D( Collider2D col )

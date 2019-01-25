@@ -21,7 +21,7 @@ public class Fighter : MonoBehaviour
 
 	public Pose CurrentPose;
 
-	[SerializeField] private float Health;
+	[SerializeField] private float Health = 1;
 
 	private void Awake()
 	{
@@ -43,9 +43,10 @@ public class Fighter : MonoBehaviour
 		}
 	}
 
-	public void TakeDamage( float dmg )
+	public bool TakeDamage( float dmg )
 	{
-		Health -= dmg;
+		Health = Math.Max( Health - dmg, 0f );
+		return Health == 0f;
 	}
 
 	private void Update()

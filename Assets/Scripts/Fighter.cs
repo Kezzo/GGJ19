@@ -21,6 +21,8 @@ public class Fighter : MonoBehaviour
 
 	public Pose CurrentPose;
 
+	[SerializeField] private float Health;
+
 	private void Awake()
 	{
 		SetPose(Pose.IDLE);
@@ -39,6 +41,11 @@ public class Fighter : MonoBehaviour
 		{
 			image.sprite = poseSetupToUse.Sprite;
 		}
+	}
+
+	public void TakeDamage( float dmg )
+	{
+		Health -= dmg;
 	}
 
 	private void Update()

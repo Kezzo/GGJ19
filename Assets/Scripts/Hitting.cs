@@ -5,6 +5,7 @@ using UnityEngine;
 public class Hitting : MonoBehaviour 
 {
 	[SerializeField] private float HitboxSize = 1.3f;
+	[SerializeField] private float Damage = 0.1f;
 
 	private Collider2D opponentCollider;
 	private Fighter opponent;
@@ -25,7 +26,7 @@ public class Hitting : MonoBehaviour
 		if( opponent.CurrentPose == Pose.BLOCK )
 			return;
 
-		
+		opponent.TakeDamage( Damage );
 	}
 
     void OnTriggerEnter2D( Collider2D col )

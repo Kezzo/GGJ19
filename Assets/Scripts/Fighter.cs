@@ -68,7 +68,9 @@ public class Fighter : MonoBehaviour
 		{
 			if(Input.GetKeyDown(poseSetups[i].KeyCode))
 			{
-				if (poseSetups[i].Pose == Pose.WALK1)
+				if (poseSetups[i].Pose == Pose.WALK1 || 
+				    poseSetups[i].Pose == Pose.WALK2 || 
+				    poseSetups[i].Pose == Pose.WALK3)
 				{
 					SetNextWalkPose();
 				}

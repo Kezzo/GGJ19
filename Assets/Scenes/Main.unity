@@ -410,32 +410,26 @@ MonoBehaviour:
   image: {fileID: 333066665}
   poseSetups:
   - Pose: 0
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: be55d163efd4741dda4812f8e86c0972, type: 3}
     KeyCode: 0
-  - Pose: 0
+  - Pose: 1
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 276
+  - Pose: 1
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 275
+  - Pose: 7
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 273
+  - Pose: 8
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 274
+  - Pose: 5
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 44
+  - Pose: 6
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
-    Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
-    Sprite: {fileID: 0}
-    KeyCode: 0
+    KeyCode: 46
   CurrentPose: 0
 --- !u!1 &378262120
 GameObject:
@@ -807,30 +801,24 @@ MonoBehaviour:
   - Pose: 0
     Sprite: {fileID: 21300000, guid: be55d163efd4741dda4812f8e86c0972, type: 3}
     KeyCode: 0
-  - Pose: 0
+  - Pose: 1
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 97
+  - Pose: 1
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 100
+  - Pose: 7
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 119
+  - Pose: 8
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 115
+  - Pose: 5
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
+    KeyCode: 304
+  - Pose: 6
     Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
-    Sprite: {fileID: 0}
-    KeyCode: 0
-  - Pose: 0
-    Sprite: {fileID: 0}
-    KeyCode: 0
+    KeyCode: 310
   CurrentPose: 0
 --- !u!1 &1869810343
 GameObject:

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Fighter : MonoBehaviour
 {
 	[SerializeField]
-	private SpriteRenderer spriteRenderer;
+	private Image image;
 	
 	[Serializable]
 	private class PoseSetup
@@ -35,7 +36,7 @@ public class Fighter : MonoBehaviour
 		}
 		else
 		{
-			spriteRenderer.sprite = poseSetupToUse.Sprite;
+			image.sprite = poseSetupToUse.Sprite;
 		}
 	}
 }

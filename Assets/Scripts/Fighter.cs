@@ -13,6 +13,7 @@ public class Fighter : MonoBehaviour
 	{
 		public Pose Pose;
 		public Sprite Sprite;
+		public KeyCode KeyCode;
 	}
 
 	[SerializeField]

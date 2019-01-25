@@ -51,13 +51,43 @@ public class Fighter : MonoBehaviour
 
 	private void Update()
 	{
+		CheckInput();
+	}
+
+	private void CheckInput()
+	{
 		for (int i = 0; i < poseSetups.Count; i++)
 		{
 			if(Input.GetKeyDown(poseSetups[i].KeyCode))
 			{
-				SetPose(poseSetups[i].Pose);
-				break;
+				if (poseSetups[i].Pose == Pose.WALK1)
+				{
+					SetNextWalkPose();
+				}
+				else
+				{
+					SetPose(poseSetups[i].Pose);
+				}
 			}
+		}
+	}
+
+	private void SetNextWalkPose()
+	{
+		switch (CurrentPose)
+		{
+			case Pose.WALK1:
+				SetPose(Pose.WALK2);
+				break;
+			case Pose.WALK2:
+				SetPose(Pose.WALK3);
+				break;
+			case Pose.WALK3:
+				SetPose(Pose.WALK1);
+				break;
+			default:
+				SetPose(Pose.WALK1);
+				break;
 		}
 	}
 }

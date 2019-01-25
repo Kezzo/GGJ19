@@ -12,5 +12,6 @@ public enum Pose
 	PUNCH = 5,
 	KICK = 6,
 	JUMP = 7,
-	VICTORY = 8
+	VICTORY = 8,
+	BLOCK = 9
 }

@@ -954,39 +954,39 @@ MonoBehaviour:
   - Pose: 0
     Sprite: {fileID: 21300000, guid: d01d543200fb54bf993e35a76047e6ee, type: 3}
     KeyCode: 0
-    Duration: 1
+    Duration: 0
   - Pose: 1
     Sprite: {fileID: 21300000, guid: 8b52ccac0ccb24b51a905ec6489b8ab8, type: 3}
     KeyCode: 97
-    Duration: 1
+    Duration: 0.1
   - Pose: 1
     Sprite: {fileID: 21300000, guid: 8b52ccac0ccb24b51a905ec6489b8ab8, type: 3}
     KeyCode: 100
-    Duration: 1
+    Duration: 0.1
   - Pose: 7
     Sprite: {fileID: 21300000, guid: f95c7a25eb9514c6897a74c60649d1f3, type: 3}
     KeyCode: 119
-    Duration: 1
+    Duration: 0.1
   - Pose: 8
     Sprite: {fileID: 21300000, guid: 14ea1c1e96f664a1cb41dd4ff4b92308, type: 3}
     KeyCode: 115
-    Duration: 1
+    Duration: 0.1
   - Pose: 5
     Sprite: {fileID: 21300000, guid: c5215a0dbd0d040e58280d52b85ac2ab, type: 3}
     KeyCode: 304
-    Duration: 1
+    Duration: 0.1
   - Pose: 6
     Sprite: {fileID: 21300000, guid: c5215a0dbd0d040e58280d52b85ac2ab, type: 3}
     KeyCode: 310
-    Duration: 1
+    Duration: 0.1
   - Pose: 2
     Sprite: {fileID: 21300000, guid: d01d543200fb54bf993e35a76047e6ee, type: 3}
     KeyCode: 0
-    Duration: 1
+    Duration: 0.1
   - Pose: 3
     Sprite: {fileID: 21300000, guid: 0ea89720b7b70426a99d05d6be45c822, type: 3}
     KeyCode: 0
-    Duration: 1
+    Duration: 0.1
   CurrentPose: 0
   Health: 1
 --- !u!1 &1869810343

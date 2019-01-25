@@ -18,7 +18,7 @@ public class Hitting : MonoBehaviour
         bc.isTrigger = true;
     }
 
-	public void OnHit()
+	public void OnAttack()
 	{
 		if( opponent == null )
 			return;

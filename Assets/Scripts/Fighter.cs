@@ -55,6 +55,11 @@ public class Fighter : MonoBehaviour
 	private void Update()
 	{
 		CheckInput();
+		
+		if (Time.time > lastPoseFinishTime)
+		{
+			SetPose(Pose.IDLE);
+		}
 	}
 
 	private void CheckInput()

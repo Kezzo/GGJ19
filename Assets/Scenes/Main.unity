@@ -316,7 +316,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 296, y: -190}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333066665
 MonoBehaviour:
@@ -394,7 +394,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100, y: 100}
+  m_Size: {x: 300, y: 300}
   m_EdgeRadius: 0
 --- !u!114 &333066669
 MonoBehaviour:
@@ -431,6 +431,7 @@ MonoBehaviour:
     Sprite: {fileID: 0}
     KeyCode: 46
   CurrentPose: 0
+  Health: 1
 --- !u!1 &378262120
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +706,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -270, y: -190}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1690330888
 MonoBehaviour:
@@ -783,7 +784,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100, y: 100}
+  m_Size: {x: 300, y: 300}
   m_EdgeRadius: 0
 --- !u!114 &1690330892
 MonoBehaviour:
@@ -799,27 +800,28 @@ MonoBehaviour:
   image: {fileID: 1690330888}
   poseSetups:
   - Pose: 0
-    Sprite: {fileID: 21300000, guid: be55d163efd4741dda4812f8e86c0972, type: 3}
+    Sprite: {fileID: 21300000, guid: d01d543200fb54bf993e35a76047e6ee, type: 3}
     KeyCode: 0
   - Pose: 1
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: 8b52ccac0ccb24b51a905ec6489b8ab8, type: 3}
     KeyCode: 97
   - Pose: 1
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: 8b52ccac0ccb24b51a905ec6489b8ab8, type: 3}
     KeyCode: 100
   - Pose: 7
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: f95c7a25eb9514c6897a74c60649d1f3, type: 3}
     KeyCode: 119
   - Pose: 8
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: 14ea1c1e96f664a1cb41dd4ff4b92308, type: 3}
     KeyCode: 115
   - Pose: 5
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: c5215a0dbd0d040e58280d52b85ac2ab, type: 3}
     KeyCode: 304
   - Pose: 6
-    Sprite: {fileID: 0}
+    Sprite: {fileID: 21300000, guid: c5215a0dbd0d040e58280d52b85ac2ab, type: 3}
     KeyCode: 310
   CurrentPose: 0
+  Health: 1
 --- !u!1 &1869810343
 GameObject:
   m_ObjectHideFlags: 0

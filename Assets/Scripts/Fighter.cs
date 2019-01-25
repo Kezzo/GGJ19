@@ -40,4 +40,16 @@ public class Fighter : MonoBehaviour
 			image.sprite = poseSetupToUse.Sprite;
 		}
 	}
+
+	private void Update()
+	{
+		for (int i = 0; i < poseSetups.Count; i++)
+		{
+			if(Input.GetKeyDown(poseSetups[i].KeyCode))
+			{
+				SetPose(poseSetups[i].Pose);
+				break;
+			}
+		}
+	}
 }

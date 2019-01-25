@@ -4,19 +4,10 @@ using UnityEngine;
 
 public class Hitting : MonoBehaviour 
 {
-	[SerializeField] private float HitboxSize = 1.3f;
 	[SerializeField] private float Damage = 0.1f;
 
 	private Collider2D opponentCollider;
 	private Fighter opponent;
-
-    void Awake()
-    {
-        BoxCollider2D bc;
-        bc = gameObject.AddComponent<BoxCollider2D>() as BoxCollider2D;
-        bc.size = new Vector2( HitboxSize, HitboxSize );
-        bc.isTrigger = true;
-    }
 
 	public void OnAttack()
 	{

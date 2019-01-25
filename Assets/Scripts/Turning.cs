@@ -4,17 +4,10 @@ using UnityEngine;
 
 public class Turning : MonoBehaviour 
 {
-	[SerializeField] private float HitboxHeight = 30f;
-	[SerializeField] private float HitboxWidth = 0.8f;
-
 	private Vector3 parentScale;
 
     void Awake()
     {
-        BoxCollider2D bc;
-        bc = gameObject.AddComponent<BoxCollider2D>() as BoxCollider2D;
-        bc.size = new Vector2( HitboxWidth, HitboxHeight );
-        bc.isTrigger = true;
 		parentScale = transform.parent.localScale;
     }
 	

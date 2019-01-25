@@ -15,6 +15,7 @@ public class Fighter : MonoBehaviour
 		public Sprite Sprite;
 		public KeyCode KeyCode;
 		public float Duration;
+		public Vector3 PositionChange;
 	}
 
 	[SerializeField]
@@ -24,9 +25,14 @@ public class Fighter : MonoBehaviour
 
 	[SerializeField] private float Health = 1;
 	private float lastPoseFinishTime = 0f;
+	private Rigidbody2D rigidbody2D;
+
+	[SerializeField]
+	private float maxVelocity;
 
 	private void Awake()
 	{
+		rigidbody2D = GetComponent<Rigidbody2D>();
 		SetPose(Pose.IDLE);
 	}
 
@@ -78,6 +84,16 @@ public class Fighter : MonoBehaviour
 				if (Input.GetKey(poseSetups[i].KeyCode))
 				{
 					SetNextWalkPose();
+					rigidbody2D.velocity = poseSetups[i].PositionChange;
+				}
+			}
+			else if(poseSetups[i].Pose == Pose.VICTORY)
+			{
+				if (Input.GetKey(poseSetups[i].KeyCode))
+				{
+					SetPose(poseSetups[i].Pose);
+					
+					rigidbody2D.velocity = poseSetups[i].PositionChange;
 				}
 			}
 			else
@@ -85,8 +101,15 @@ public class Fighter : MonoBehaviour
 				if (Input.GetKeyDown(poseSetups[i].KeyCode))
 				{
 					SetPose(poseSetups[i].Pose);
+					
+					rigidbody2D.velocity = poseSetups[i].PositionChange;
 				}
 			}
+		}
+
+		if (CurrentPose != Pose.JUMP)
+		{
+			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, -3000f);
 		}
 	}
 

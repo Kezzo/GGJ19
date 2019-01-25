@@ -14,6 +14,7 @@ public class Fighter : MonoBehaviour
 		public Pose Pose;
 		public Sprite Sprite;
 		public KeyCode KeyCode;
+		public float Duration;
 	}
 
 	[SerializeField]
@@ -22,6 +23,7 @@ public class Fighter : MonoBehaviour
 	public Pose CurrentPose;
 
 	[SerializeField] private float Health = 1;
+	private float lastPoseFinishTime = 0f;
 
 	private void Awake()
 	{
@@ -40,6 +42,7 @@ public class Fighter : MonoBehaviour
 		else
 		{
 			image.sprite = poseSetupToUse.Sprite;
+			lastPoseFinishTime = Time.time + poseSetupToUse.Duration;
 		}
 	}
 
@@ -56,6 +59,11 @@ public class Fighter : MonoBehaviour
 
 	private void CheckInput()
 	{
+		if (Time.time <= lastPoseFinishTime)
+		{
+			return;
+		}
+		
 		for (int i = 0; i < poseSetups.Count; i++)
 		{
 			if(Input.GetKeyDown(poseSetups[i].KeyCode))
